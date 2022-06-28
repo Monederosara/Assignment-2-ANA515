@@ -16,6 +16,22 @@ library(knitr)
 library(bslib) 
 
 ```
+```{r}
+Section 1: Data Description
+The data set love_actually_appearences is based on the famous movie ‘Love Actually’, and what collects is the if all the actors that participated on that movie appear or not on each of the movie’s scenes. 
+The information has been collected by two different variables:
+1.	Actors: First we have a list of all the actors that participated on the movie such as: Bill Nighy, Keira Knightley, Hugh Grant,… There’s a total of 14 actors. 
+2.	Scenes: The movie has been broken in a total of 71 scenes that together complete the movie. On the data set they are ordered by chronological order. 
+With this dataset I want to see who are the actors that appeared in more scenes. I think having that information is an essential starting point that gives a sense about the movie. 
+We could later double check this ranking with a secondary data base called love_actually_adjencies where we on the rows and columns we have the 14 actors displayed. This dataset collects the relation ship between the characters of the movie, assigning them an index that goes from 0 to 13, being 0 a null relationship and 13 the strongest. Although I don’t have a detailed plan of how the index has been pondered, based on the article https://fivethirtyeight.com/features/the-definitive-analysis-of-love-actually-the-greatest-christmas-movie-of-our-time/ I imagine the index is based on:
+1.	The time those characters share on screen
+2.	The amount of conversation (in minutes) they have on screen 
+
+Format:
+Both data sets are saved in csv format. 
+Both datasets Appearances and Adjencies are flat files, they have a clear structure where each line of the plain text holds only one record. Records are separated by commas, which matches with the fact they are saved as csv files. We see that the data bases are easy to understand what they are explaining.
+The databases are not fixed width since they are saved as CSV, and CSV files can’t have a fixed length of their columns. 
+```
 
 Section 2: Data Reading
 
